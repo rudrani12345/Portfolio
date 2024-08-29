@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .logo {
+            font-size: 35px;
+            color: white;
+            padding: 0 100px;
+            line-height: 80px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            margin-right: 10px;
+            float: right;
+            margin-top: 25px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            font-size: 18px;
+
+            margin-left: 5px;
+        }
+
+        nav ul li a {
+            padding: 8px 8px;
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        nav ul li a:hover,
+        a.active {
+            background-color: white;
+            color: #000;
+            transition: 0.5s;
+            border-radius: 5px;
+            border-radius: 1px solid black;
+        }
+
+        #h:hover {
+            text-decoration: underline orange;
+        }
+
+        p:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav id="n">
+            <label class="logo">Rudrani Anand</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="edu.html">Education</a></li>
+                <li><a href="#" class="active">Skills</a></li>
+                <li><a href="ex.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <!-- <center>
+            <h1 style="margin-top:100px;color:white;">Skills </h1>
+
+        </center> -->
+        <div class="row" style="margin-top:50px;">
+            <div class="col-lg-3" style="margin-top:50px;margin-left:50px;">
+                <img src="htm.png" alt="" height=100 width=100 style=" display: block;
+  margin-left: auto;
+  margin-right: auto;">
+                <p style="text-align:center;font-size:25px;color:orange;" id="h">Html</p>
+                <p style=" text-align: justify;font-size:17px;">HTML (Hypertext Markup Language) is like the basic
+                    language that web
+                    browsers understand. It's used
+                    to structure content
+                    on websites, such as text, images, links, and more. Having HTML skills allows you to create and
+                    design web pages,
+                    shaping how information is displayed on the internet. </p>
+            </div>
+            <div class="col-lg-3" style="margin-top:50px;margin-left:90px;">
+                <img src="icons8-css-logo-100.png" alt="" style=" display: block;
+              margin-left: auto;
+              margin-right: auto;">
+                <p style="text-align:center;font-size:25px;color:orange;" id="h">CSS</p>
+                <p style=" text-align: justify;font-size:17px;">CSS (Cascading Style Sheets) is like the stylist of the
+                    web! While HTML structures the content of a webpage, CSS is used
+                    to style and design that content. With CSS skills, you can control the layout, colors, fonts, and
+                    overall look of a
+                    website. It allows you to make your web pages visually appealing and responsive to different screen
+                    sizes.</p>
+            </div>
+            <div class="col-lg-3" style="margin-top:50px;margin-left:90px;">
+                <img src="icons8-bootstrap-logo-48.png" alt="" height=100 width=100 style=" display: block;
+                          margin-left: auto;
+                          margin-right: auto;">
+                <p style="text-align:center;font-size:25px;color:orange;" id="h">Bootstrap</p>
+                <p style=" text-align: justify;font-size:17px;">Bootstrap is like a super helpful toolkit for web
+                    developers! It's a front-end framework that makes building responsive
+                    and mobile-first websites a breeze. With Bootstrap, you can use pre-designed templates, components,
+                    and utilities to
+                    create sleek and modern web designs without starting from scratch.</p>
+            </div>
+        </div>
+        <div class="row" style="margin-top:50px;">
+            <div class="col-lg-3" style="margin-top:50px;margin-left:50px;">
+                <img src="icons8-javascript-48.png" alt="" height=100 width=100 style=" display: block;
+          margin-left: auto;
+          margin-right: auto;">
+                <p style="text-align:center;font-size:25px;color:orange;" id="h">Javascript</p>
+                <p style=" text-align: justify;font-size:17px;">JavaScript is like the magic wand of web development!
+                    It's a powerful programming language that adds interactivity and
+                    dynamic behavior to websites. With JavaScript skills, you can create interactive elements like
+                    pop-ups, animations, form
+                    validations, and much more. It's widely used to enhance user experience and make web pages more
+                    engaging. 
+                </p>
+            </div>
+            <div class="col-lg-3" style="margin-top:50px;margin-left:50px;">
+                <img src="icons8-python-100.png" alt="" height=100 width=100 style=" display: block;
+          margin-left: auto;
+          margin-right: auto;">
+                <p style="text-align:center;font-size:25px;color:orange;" id="h">Python</p>
+                <p style=" text-align: justify;font-size:17px;">JPython is like the Swiss Army knife of programming
+                    languages! It's known for its simplicity and readability, making it a
+                    great choice for beginners and experienced developers alike. Python is versatile and can be used for
+                    web development,
+                    data analysis, artificial intelligence, automation, and more.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: black;
+
+        }
+
+        .logo {
+            font-size: 35px;
+            color: white;
+            padding: 0 100px;
+            line-height: 80px;
+            font-weight: bold;
+
+
+        }
+
+        nav ul {
+            margin-right: 10px;
+            float: right;
+            margin-top: 25px;
+            position: sticky;
+        }
+
+        nav ul li {
+            display: inline-block;
+            font-size: 18px;
+
+            margin-left: 5px;
+        }
+
+        nav ul li a {
+            padding: 8px 8px;
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        nav ul li a:hover,
+        a.active {
+            background-color: white;
+            color: #000;
+            transition: 0.5s;
+            border-radius: 5px;
+            border-radius: 1px solid black;
+        }
+
+        pre {
+            color: #fff;
+            background-color: #000;
+            border: none;
+            font-size: 40px;
+            margin-top: 150px;
+            font-weight: bold;
+        }
+
+        #an {
+            color: orange
+        }
+
+        p {
+            font-size: 20px;
+            color: #fff;
+            margin-top: 10px;
+
+        }
+
+        #w,
+        #p {
+            color: plum;
+        }
+
+        .about {
+            margin-top: -40px;
+            width: 35%;
+            height: 20%;
+            background-color: purple;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+
+        .about a {
+            font-size: 25px;
+            color: #fff;
+        }
+
+        .so {
+            margin-top: 25px;
+            font-size: 30px;
+            margin-left: 10px;
+        }
+
+        .so a {
+            color: #fff;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    </style>
+</head>
+
+<body ng-controller="myCtrl">
+
+    <div class="container-fluid">
+        <nav id="n">
+            <label class="logo">Rudrani Anand</label>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="edu.html">Education</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="ex.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container" class="hloo">
+        <div class="row">
+            <div class="col-lg-6">
+                <pre>Hi There,
+I'm Rudrani <span id="an">Anand</span>
+<p>I Am Into <span id="w">{{name}}</span>
+                </pre>
+                <div class="about">
+                    <a href="about.html">About Me <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></a>
+
+                </div>
+                <div class="so">
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://in.linkedin.com/in/rudrani-anand-434305256"><i class="fa fa-linkedin-square"
+                            aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href="https://github.com/rudrani12345/android_python"><i class="fa fa-github-square"
+                            aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-6" style="margin-top:100px;">
+                <img src="cvp.jpg" alt="" height="500" style="margin-left:30px;border:2px solid black;">
+            </div>
+
+        </div>
+    </div>
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("myCtrl", function ($scope, $interval, $timeout) {
+            $scope.name = "Web Developer";
+            $interval(function () {
+                $scope.name = "Python Developer";
+            }, 2000);
+            $interval(function () {
+                $scope.name = "Wordpress Developer";
+            }, 3000);
+            $interval(function () {
+                $scope.name = "Web Developer";
+            }, 4000);
+        })
+    </script>
+</body>
+
+</html>
